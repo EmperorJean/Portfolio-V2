@@ -1,0 +1,339 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primaryColor: #1c1045;
+    --secondaryColor: #36295e;
+}
+
+body {
+    background-color: var(--secondaryColor);
+}
+nav
+{
+    clear: both;
+    color: white;
+    display: flex;
+    padding: 1rem 2rem ;
+    background-color: var(--primaryColor);
+    align-items: center;
+    margin-right: 3vw;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+nav button{
+    border: solid rgb(255, 255, 255) 2px;
+    color: white;
+    outline: none;
+    background: none;
+    font-size: min(5vw, 15pt);
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.sideBar
+{
+    color: white;
+    flex-direction: column;
+    display: flex;
+    position: fixed;
+
+    width: 5vw;
+    max-width: 6rem;
+    min-width: 4rem;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--primaryColor);
+    padding:1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socialMedia
+{
+    flex-direction: column;
+    display: flex;
+}
+
+.sideBar
+{
+    z-index: 100;
+}
+.socialMedia i{
+    padding: 1rem 0;
+}
+.sideBar .fa
+{
+cursor: pointer;
+z-index: 100;
+font-size: min(5vw, 30pt);
+}
+/* things that grow on hover */
+.sideBar .fa, nav button
+{
+    transition: transform .2s ease;
+    transform: scale(1);
+}
+
+.sideBar .fa:hover
+{
+    transition: transform .2s ease;
+    transform: scale(1.2);
+}
+
+.sideBar button{
+    background: none;
+    color: white;
+    width: inherit;
+    border: none;
+    outline: none;
+}
+nav button:hover
+{
+    transform: translate(-1rem, 0) scale(1.2);
+}
+
+nav button a 
+{
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+    font-size: inherit;
+}
+.header
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-left: 5rem;
+    text-align: left;
+    flex-direction: column;
+    background-color: #36295e;
+    padding-bottom: 10vh;
+    z-index: -2;
+  
+}
+
+.header h1{
+    font-size: min(4.5vw, 40pt);
+}
+.header h2{
+    font-size: min(2.5vw, 20pt);
+}
+
+
+.sideNav
+{
+    position: absolute;
+    top: 0;
+    right: -100vw;
+    opacity: 1;
+    font-size: min(5vw, 15pt);
+    width: fit-content;
+    background-color: var(--primaryColor);
+    transition: all ease .5s;
+}
+
+.sideNav ul
+{
+    list-style: none;
+    display: flex;
+}
+
+.sideNav ul li a{
+    display: block;
+    padding:1.2rem 1rem ;
+    text-align: right;
+    cursor: pointer;
+}
+.sideNav ul li a:hover{
+opacity: .5;
+}
+
+.menuShow
+{
+    opacity: 1;
+    right: 5rem;
+}
+
+.iconLink
+{
+    z-index: 100;
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+
+
+a{
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+
+
+
+.buttons > a{
+    margin-right: 1.5rem;
+}
+
+.buttons {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.holder{
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 1rem;
+    padding-right: 3rem;
+    color: white;
+    z-index: 1;
+    margin-left: 2rem;
+}
+
+.holder > .buttons > a {
+
+    font-size: min(30pt, 5vw);
+}
+
+.projects-button {
+    background-color: transparent;
+    border: solid white;
+    color: white;
+    font-size: min(3vw, 15pt);
+    font-weight: bold;
+    padding: 5px 2vw;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+
+/* Projects Stuff */
+
+.projects-label{
+    padding: 1rem;
+    text-align: center;
+    font-size: min(4vw, 40pt);
+    background-color: rgba(136, 88, 226, 0.144);
+    color: white;
+}
+
+.projects-label > h1 {
+
+}
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 600px);
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    margin: 0 5rem;
+    margin-right: 5rem;
+
+}
+
+.project-container{
+    position: relative;
+    width: 500px;
+    overflow: hidden;
+    height: 500px;
+    margin: 1rem;
+
+}
+
+.project-header {
+    height: 300px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.project-header > img {
+    width: auto;
+    height: 100%;
+}
+
+.project-body {
+
+    background-color: white;
+    padding: .5rem;
+    height: 160px;
+}
+
+.project-footer{
+ width: 100%;
+ background-color: var(--primaryColor);
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ text-align: center;
+ padding: 1rem;
+ height: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.center {
+    margin: 0 auto;
+  }
+  
+  .outer-ring {
+    position: absolute;
+    height: min(65vw, 570px);
+    width: min(65vw, 570px);
+    background-image: linear-gradient(135deg, #FEED07 0%, #FE6A50 5%, #ED00AA 15%, #2FE3FE 50%, #8900FF 100%);
+    border-radius: 50%;
+    
+    /*  Rotate  */
+    animation-duration: 5s;
+    animation-name: rotate;
+    animation-iteration-count:infinite;
+  }
+  
+  .inner-ring {
+    position: absolute;
+    left: 90px;
+    height: min(62vw, 550px);
+    width: min(62vw, 550px);
+    background-image: linear-gradient(0deg, #36295e, #1c1045);
+    border-radius: 50%;
+  }
+  
+  @keyframes rotate {
+      0% {transform:rotate(0deg);}
+      100% {transform:rotate(360deg);}
+  }
+  

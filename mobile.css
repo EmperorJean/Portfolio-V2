@@ -1,0 +1,98 @@
+
+/* mobile view  */
+@media (max-width: 1000px)
+{
+
+    .sideBar
+{
+    width: 3rem;
+}
+
+.sideBar .fa
+{
+    font-size: 2em;
+}
+.sideNav
+{
+    font-size: 12em;
+}
+.menuShow
+{
+    opacity: 1;
+    right: 3rem;
+}
+    .headerAbout
+    {
+        margin-left: 0;
+        margin-right: 3rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    .headerAbout h1
+    {
+        font-size: 2.5em;
+    }
+
+    .headerAbout img
+    {
+        border:   solid black 2px;
+        width: 15em;
+    }
+
+    .headerAbout p
+    {
+        font-size: 1.5em;
+    }
+
+    .aboutText
+{
+    margin-left: 1rem;
+    margin-right: 1em;
+}
+    .sideNav ul
+    {
+        
+        border-right: solid white 2px;
+        height: 100vh;
+        width: 100%;
+        display: block;
+    }
+
+    .sideNav ul li a
+    {
+        padding-left: 3rem;
+        width: 100vw;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .sideNav ul li a:hover
+    {
+        background-color: var(--primaryColor);
+    }
+
+    .header h1 
+    {
+        font-size: 3rem;
+    }
+
+    nav
+{
+    padding: .8rem 2rem ;
+    margin-right: 1rem;
+}
+
+nav button{
+    border: solid rgb(255, 255, 255) 2px;
+    color: white;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    padding: .3rem 1.4rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+}
+
