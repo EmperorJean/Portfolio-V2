@@ -226,11 +226,12 @@ a{
 /* Projects Stuff */
 
 .projects-label{
-    padding: 1rem;
+    padding: 10rem;
     text-align: center;
     font-size: min(4vw, 30pt);
     background-color: rgba(136, 88, 226, 0.144);
     color: white;
+    margin-bottom: 1rem;
 }
 
 .projects-label > h1 {
@@ -253,6 +254,8 @@ a{
     overflow: hidden;
     height: fit-content;
     margin: 1rem;
+    border-radius: 2rem;
+    border: solid .5rem black;
 
 }
 
@@ -260,6 +263,7 @@ a{
     height: 400px;
     overflow: hidden;
     background-color: black;
+    
 }
 
 .project-header > img {
@@ -277,16 +281,24 @@ a{
     background-color: #1c1045;
     padding:  1rem;
     color: white;
+
+
+    border-bottom: solid .5rem black;
+
+
+    border-top: solid .5rem black;
 }
 
 .project-description {
     display: flex;
-    padding: 1rem;
+    padding: .5rem 1rem;
     background-color: #85629d;
     color: white;
     height: 100%;
 }
 .project-footer{
+
+    border-top: solid .5rem black;
  width: 100%;
  background-color: var(--primaryColor);
  display: flex;
